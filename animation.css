@@ -1,0 +1,17 @@
+@-webkit-keyframes orbit2 {
+	from { 	-webkit-transform: rotate(0deg) translateX(150px) rotate(0deg) scale(0.5); }
+    50% { 	-webkit-transform: rotate(180deg) translateX(150px) rotate(-180deg)scale(1); }
+	to   {  -webkit-transform: rotate(360deg) translateX(150px) rotate(-360deg) scale(0.5); }
+}
+
+
+.citations {
+    left: 315px;
+    position: absolute;
+    top: 143px;
+    animation: orbit2 20s linear infinite;
+}
+
+.citations:hover {
+    -webkit-animation-play-state: paused;
+}
